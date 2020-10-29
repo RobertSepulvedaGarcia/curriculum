@@ -1,0 +1,24 @@
+.menu {
+  z-index: 10;
+  position: relative;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    li {
+      padding: 20px 30px;
+      font-weight: bold;
+
+      a {
+        color: white;
+        transition: all 0.3s;
+        &:hover {
+          color: aqua;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
