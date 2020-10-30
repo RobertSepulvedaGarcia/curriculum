@@ -5,12 +5,7 @@ export default function ContactForm() {
   const { Group, Label, Control } = Form
   return (
     <Container>
-      <Form
-        name="contact-form"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
+      <Form name="contact-form" method="post" data-netlify="true">
         <Group>
           <Label>Su Nombre:</Label>
           <Control type="text" />
