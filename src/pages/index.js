@@ -5,10 +5,10 @@ import SobreMi from "../components/SobreMi/SobreMi"
 import "./Index.scss"
 
 export default function index() {
-  return (
+  return typeof window !== `undefined` ? (
     <LayoutBasic menuColor="rgba(102,205,170,0.2)">
       <Info />
       <SobreMi />
     </LayoutBasic>
-  )
+  ) : null
 }

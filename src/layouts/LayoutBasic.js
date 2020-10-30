@@ -3,10 +3,10 @@ import Menu from "../components/Menu/Menu"
 export default function LayoutBasic(props) {
   const { children, menuColor } = props
 
-  return typeof window !== `undefined` ? (
+  return (
     <>
       <Menu bgColor={menuColor} />
       {children}
     </>
-  ) : null
+  )
 }
