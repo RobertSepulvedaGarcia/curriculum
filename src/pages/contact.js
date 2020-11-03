@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm/ContactForm"
 
 export default function contact() {
   return (
-    <LayoutBasic menuColor="#000">
+    <LayoutBasic menuColor="rgba(102,205,170,0.2)">
       <ContactForm />
     </LayoutBasic>
   )

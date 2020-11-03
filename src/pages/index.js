@@ -3,7 +3,7 @@ import LayoutBasic from "../layouts/LayoutBasic"
 import Info from "../components/Info/Info"
 import SobreMi from "../components/SobreMi/SobreMi"
 import { datosPersonales } from "../utils/info"
-import { Row, Col } from "react-bootstrap"
+import { Col } from "react-bootstrap"
 import "./Index.scss"
 
 export default function index() {
