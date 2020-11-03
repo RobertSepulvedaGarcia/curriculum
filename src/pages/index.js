@@ -9,7 +9,7 @@ import "./Index.scss"
 export default function index() {
   return (
     <LayoutBasic menuColor="rgba(102,205,170,0.2)">
-      <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+      <Col className="obscurecer" xs={12} sm={12} md={12} lg={12} xl={12}>
         <Info informacion={datosPersonales} />
       </Col>
       <Col className="fondo" xs={12} sm={12} md={12} lg={12} xl={12}>
