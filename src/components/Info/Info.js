@@ -16,7 +16,7 @@ export default function Info({ informacion }) {
           </Col>
           <Col xs={12} md={8} className="infor__datos">
             <span>HOLA!</span>
-            <p>Robert William Sepúlveda García</p>
+            <p>Fernando el impostor</p>
             <p style={{ color: "white" }}>Programador Junior Full-Stack</p>
             <hr />
             <div className="more-info">
