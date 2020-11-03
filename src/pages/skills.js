@@ -12,7 +12,7 @@ import "./skills.scss"
 
 export default function skills() {
   return (
-    <LayoutBasic menuColor="#000">
+    <LayoutBasic menuColor="black">
       <Container className="skills">
         <div className="skills__block">
           <h2>Front-End</h2>

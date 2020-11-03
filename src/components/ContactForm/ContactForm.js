@@ -1,10 +1,11 @@
 import React from "react"
-import { Container, Form, Button } from "react-bootstrap"
+import { Row, Col, Container, Form, Button } from "react-bootstrap"
+import "./ContactForm.scss"
 
 export default function ContactForm() {
   const { Group, Label, Control } = Form
   return (
-    <Container>
+    <Container className="formulario">
       <Form
         name="contact-form"
         method="post"
@@ -17,25 +18,44 @@ export default function ContactForm() {
           NO LLENES ESTO!:
           <input name="bot-field" />
         </p>
-        <Group>
-          <Label>Nombre:</Label>
-          <Control required type="text" name="nombre" />
-        </Group>
-        <Group>
-          <Label>Apellido:</Label>
-          <Control required type="text" name="apellido" />
-        </Group>
-        <Group>
-          <Label>E-mail:</Label>
-          <Control required type="email" name="email" />
-        </Group>
-        <Group>
-          <Label>¿En qué le puedo ayudar?:</Label>
-          <Control required as="textarea" rows="4" name="info" />
-        </Group>
-        <Button variant="primary" type="submit">
-          Enviar
-        </Button>
+        <Row>
+          <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Group>
+              <Label>Nombre:</Label>
+              <Control required type="text" name="nombre" />
+            </Group>
+          </Col>
+          <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Group>
+              <Label>Apellido:</Label>
+              <Control required type="text" name="apellido" />
+            </Group>
+          </Col>
+          <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Group>
+              <Label>E-mail:</Label>
+              <Control required type="email" name="email" />
+            </Group>
+          </Col>
+          <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Group>
+              <Label>¿En qué le puedo ayudar?:</Label>
+              <Control required as="textarea" rows="4" name="info" />
+            </Group>
+          </Col>
+          <Col
+            style={{ textAlign: "center" }}
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            xl={12}
+          >
+            <Button variant="primary" type="submit">
+              Enviar
+            </Button>
+          </Col>
+        </Row>
       </Form>
     </Container>
   )
