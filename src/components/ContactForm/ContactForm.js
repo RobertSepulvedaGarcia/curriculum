@@ -21,7 +21,7 @@ export default function ContactForm() {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={("submit", handleSubmit(onSubmit))}
       >
         <input type="hidden" name="form-name" value="contact-form" />
         <p hidden>
