@@ -1,6 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap"
 import LayoutBasic from "../layouts/LayoutBasic"
+import Seo from "../components/Seo/Seo"
 import {
   frontendSkills,
   frontendSkillsColors,
@@ -13,6 +14,7 @@ import "./skills.scss"
 export default function skills() {
   return (
     <LayoutBasic menuColor="rgba(102,205,170,0.2)">
+      <Seo titulo="Tecnologias que manejo" />
       <Container className="skills">
         <div className="skills__block">
           <h2>Front-End</h2>

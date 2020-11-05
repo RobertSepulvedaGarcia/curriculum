@@ -7,6 +7,10 @@
     justify-content: center;
     list-style-type: none;
     margin: 0;
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
     li {
       padding: 20px 30px;
       font-weight: bold;
