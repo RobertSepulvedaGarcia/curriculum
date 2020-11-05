@@ -18,6 +18,9 @@
       padding: 50px;
 
       &__datos {
+        @media (max-width: 1024px) {
+          margin-top: 25px;
+        }
         > span {
           background-color: rgb(138, 43, 226);
           font-weight: bold;
