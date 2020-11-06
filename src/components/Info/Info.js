@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, Image } from "react-bootstrap"
+import { Row, Col, Image, Card } from "react-bootstrap"
 import "./Info.scss"
 import perfil from "../../images/profile.png"
 import Social from "./Social/Social"
@@ -9,9 +9,9 @@ export default function Info({ informacion }) {
     <div className="contenedor">
       <div className="caja" />
 
-      <Container className="box">
-        <Row className="infor">
-          <Col xs={12} md={4}>
+      <Card className="box">
+        <Row>
+          <Col style={{ padding: "0 50px 25px 50px" }} xs={12} md={4}>
             <Image style={{ borderRadius: "50px" }} src={perfil} fluid />
           </Col>
           <Col xs={12} md={8} className="infor__datos">
@@ -19,18 +19,19 @@ export default function Info({ informacion }) {
             <p>Robert William Sepúlveda García</p>
             <p style={{ color: "white" }}>Programador Junior Full-Stack</p>
             <hr />
+
             <div className="more-info">
               {informacion.map((datos, index) => (
-                <div key={index} className="item">
-                  <p>{datos.title}</p>
-                  <p>{datos.info}</p>
-                </div>
+                <ul key={index} className="item">
+                  <li>{datos.title}</li>
+                  <li>{datos.info}</li>
+                </ul>
               ))}
             </div>
           </Col>
         </Row>
         <Social />
-      </Container>
+      </Card>
     </div>
   )
 }
