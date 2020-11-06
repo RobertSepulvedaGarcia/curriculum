@@ -27,6 +27,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.10.1",
     "react-skills-bars": "^1.0.0-development",
+    "react-transition-group": "^4.4.1",
     "sweetalert2": "^10.9.0"
   },
   "devDependencies": {
