@@ -12,7 +12,12 @@ export default function Info({ informacion }) {
       <Card className="box">
         <Row>
           <Col style={{ padding: "0 50px 25px 50px" }} xs={12} md={4}>
-            <Image style={{ borderRadius: "50px" }} src={perfil} fluid />
+            <Image
+              style={{ borderRadius: "50px" }}
+              src={perfil}
+              fluid
+              alt="mi foto"
+            />
           </Col>
           <Col xs={12} md={8} className="infor__datos">
             <span>HOLA!</span>
